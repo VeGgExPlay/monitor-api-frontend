@@ -1,0 +1,31 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Base de datos
+*.sqlite
+*.sqlite3
+*.db
+database.sqlite
+
+# Logs
+*.log
+logs/
+
+# Docker
+Dockerfile*
+.dockerignore
+
+# Build
+dist/
+coverage/
+
+# Editor y SO
+.DS_Store
+*.swo
+.idea/
+.vscode/
