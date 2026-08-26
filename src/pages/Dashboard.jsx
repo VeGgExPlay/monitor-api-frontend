@@ -198,7 +198,7 @@ export default function Dashboard() {
               <Doughnut data={statusData} options={{ responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }} />
             </div>
           </Card>
-          <Card>
+          <Card className='col-span-full'>
             <h3 className="font-medium mb-4">Checks por monitor</h3>
             <div className="h-72">
               <Bar data={checksPerMonitor} options={{ responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } } } }} />
