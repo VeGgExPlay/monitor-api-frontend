@@ -25,7 +25,7 @@ function AppRoutes() {
         <Routes>
           <Route path="/login" element={user ? <Navigate to="/dashboard" replace /> : <Login />} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-          <Route path="/monitors" element={<ProtectedRoute adminOnly><Monitors /></ProtectedRoute>} />
+          <Route path="/monitors" element={<ProtectedRoute><Monitors /></ProtectedRoute>} />
           <Route path="/monitors/:id" element={<ProtectedRoute><MonitorDetail /></ProtectedRoute>} />
           <Route path="/alerts" element={<ProtectedRoute adminOnly><Alerts /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
